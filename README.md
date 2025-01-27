@@ -4,5 +4,5 @@ Technologies:
 
 Backend: ASP.NET, Java
 Database: SQL Server LocalDB
-Front-end: PHP, XML, HTML, CSS
+Front-end: HTML, CSS
 Note: This project may not open successfully in some environments due to missing or lost files. It may require additional configuration or file recovery to function properly.
