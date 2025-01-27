@@ -1,0 +1,101 @@
+.ViewConfirmedOrderPanel {
+    margin-top: 2%;
+    padding: 2%;
+    width: 100%;
+    box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    min-height: 550px;
+    
+    
+}
+
+.orderContainer {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent tables from wrapping */
+    min-height: 550px;
+}
+
+.PrepareList {
+    border-collapse: collapse;
+    width: 100%; /* Set a fixed width for all tables */
+    max-width: 500px; /* Set a maximum width if needed */
+    vertical-align: top;
+}
+
+.PrepareList tr td, .PrepareList tr th{
+   padding: 5px;
+   
+}
+.PrepareList tr thead th{
+    padding: 10px;
+}
+
+.PrepareList tr thead, .PrepareList tr tbody, .PrepareList tr tfoot {
+    
+    border: #333 1px solid;
+}
+
+ .PrepareList tr tbody, .PrepareList tr tfoot {
+    background-color:white;
+    
+}
+
+
+.PrepareList tr thead{
+    background-color: #333;
+    color: white;
+}
+
+.PrepareDetails th {
+    width:4%;
+    text-align: left;
+}
+
+.dishesDetails th {
+    text-decoration: underline;
+
+}
+
+.quantity{
+    width:40%;
+    text-align:center;
+}
+
+
+.dishesDetails tr td table tbody {
+    border: none;
+}
+
+.selectionbtn {
+    width: 100px;
+}
+
+.selection th,
+.selection td {
+    width: 50%;
+    border: none;
+    text-align: center;
+    padding: 5%;
+}
+
+.finish{
+    background-color: green;
+    color: white;
+}
+
+.finish:hover{
+    background-color: rgb(0, 91, 0);
+    cursor: pointer;
+}
+
+.cancel{
+    background-color: #c33a27;
+    color: white;
+}
+
+.cancel:hover{
+    background-color: #601e15;
+    cursor: pointer;
+    
+}

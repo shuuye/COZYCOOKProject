@@ -1,0 +1,180 @@
+.menu-item {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #eee;
+    color:black;
+}
+
+.menu-item-selected {
+    background-color: white;
+}
+
+.menu-item-dynamic {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.menu-item-dynamic:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.menu-item-selected {
+    background-color: white;
+}
+.sidebar.active {
+    /*control cart to open and close*/
+    left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 720px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bgcolor) !important;
+    box-shadow: -2px 0 10px hsl(0 4% 15%/ 10%);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+#btn:hover, #close-btn:hover{
+    cursor: pointer;
+}
+#btn {
+    font-size: 30px;
+    margin-left:17%;
+}
+#close-btn{
+    position:relative;
+    top:0;
+    font-size:30px;
+    text-align:right;
+    display:block;
+    
+}
+
+/*------------------------------------Main body----------------------------------------------------*/
+
+/*------------------------------------Main Banner----------------------------------------------------*/
+#mainBanner{
+  width: 100%;
+  padding-top: 23px;
+  position: relative;
+}
+
+.mainBannerText{
+  position: absolute;
+  justify-content: center;
+  padding: 10%;
+  text-align: center;
+}
+
+#mainBannerVd{
+  width: 100%;
+  
+}
+
+.bannerButton{
+  padding: 15px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: var(--spcolor);
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+}
+
+
+.bannerButton:hover, .bannerButton a:hover{
+  background-color: var(--greycolor);
+  font-weight: 500;
+  text-decoration: underline var(--spcolor) 2px;
+}
+
+.bannerButton a {
+  display: block; 
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+
+/*------------------------------------End Of Main Banner----------------------------------------------------*/
+
+
+
+
+/*for model pictures*/
+
+
+
+.our-dish {
+    display: flex;
+    justify-content: space-between;    
+    background-color: var(--maincolor);
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.our-dish-box {
+    flex: 1;
+    margin: 2%;
+    margin-bottom: 40px;
+    border: var(--greycolor) solid 0.2px;
+    box-sizing: border-box;
+}
+
+.our-dish-box img {
+    height: fit-content;
+    max-width: 100%;
+    border: var(--greycolor) solid 0.2px;
+}
+
+.caption {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.caption h4 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--greycolor);
+}
+
+.caption p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--greycolor);
+}
+
+.caption a {
+    text-decoration: underline;
+    padding: 1px;
+    line-height: 1;
+    color: var(--greycolor);
+}
+
+/*--------------------------------End Main body----------------------------------------------------*/

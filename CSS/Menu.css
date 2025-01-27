@@ -1,0 +1,141 @@
+﻿/* Cart Styles */
+.cart {
+    background-color: var(--bgcolor);
+    color: var(--maincolor);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.cart-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.cart-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cart-box {
+    background-color: var(--maincolor);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: calc(50% - 1rem); /* Two items per row */
+    position: relative;
+}
+
+    .cart-box:hover {
+        background-color: var(--greycolor);
+    }
+
+.cart-img {
+    width: 100px;
+    height: auto;
+}
+
+.detail-box {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+.cart-product-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    width: 50px;
+}
+
+.remove-cart, #close-cart {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Product Box Styles */
+section {
+    padding: 2rem 0 4rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.product-box {
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: calc(20% - 2rem); /* Adjust the width as needed */
+    margin-right: 1rem;
+    float: left; /* Float the product boxes to allow them to align next to each other */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: 325px; /* Adjust the height as needed */
+}
+
+    .product-box:hover {
+        padding: 10px;
+        border: 3px solid var(--spcolor);
+        transition: 0.4s;
+    }
+
+.product-img {
+    width: 100%;
+    height: 150px; /* Fixed height for product images */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover entire box */
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+}
+
+.product-description {
+    margin-bottom: 0.5rem;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 5px; /* Adjust as needed for vertical positioning */
+    right: 5px; /* Adjust as needed for horizontal positioning */
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+    .add-cart:hover {
+        display: block;
+        opacity: 30%;
+    }
+/* Clearfix to prevent floating issues */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

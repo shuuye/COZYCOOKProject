@@ -1,0 +1,93 @@
+
+.ViewDeliveryPanel {
+    margin-top: 2%;
+    padding: 2%;
+    width: 100%;
+    box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    max-height: 550px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+h1{
+    color:black; 
+}
+
+.table{
+    width: 100%;
+    background-color: black;
+}
+
+.table thead{
+    background-color: black;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 0.35px;
+    color: #ffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color:#3c3f44 ;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.table .tbody tr td .btn {
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #3c3f44 ;
+    font-weight: medium;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.table_th{
+color: white;
+}
+
+.btn {
+    color: #f1f1f1;
+}
+
+/* ---------------------------------------------Admin Delivery CSS--------------------------------------*/
+
+.menu {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.menu b {
+    font-size: 18px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 8px;
+    text-align: left; 
+}
+
+.menu li span {
+    float: right; 
+}

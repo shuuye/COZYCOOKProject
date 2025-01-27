@@ -1,0 +1,55 @@
+
+
+/*==================faq part============================*/
+
+.FAQmain{
+    background-color: var(--maincolor);
+    margin: 5%;
+}
+
+.FAQmain *{
+    color: var(--bgcolor) ;
+}
+
+.FAQ {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.FAQ hr{
+    color: #c33a27;
+    background-color: #c33a27;
+    margin: auto;
+    height: 7px;
+    
+}
+
+.FAQcontent{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top: #c33a27;
+    border-width: 2%;
+}
+
+.FAQcontent h4{
+    display: block;
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    padding: 1%;
+    border-bottom: #c33a27  solid;
+}
+
+
+
+.FAQContent *{
+    color: black !important;
+}
+
+.FAQcontent p{
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-bottom: 2%;
+    font-weight: 400;
+}

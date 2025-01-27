@@ -1,0 +1,165 @@
+/*------------------------------------Cart Function------------------------------------------ */
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px; 
+    cursor: pointer;
+    height: 15%;
+    width: 30%;
+}
+
+.add-cart:hover {
+    display: block;
+    opacity: 30%;
+
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 10%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid;
+    outline-color: var(--maincolor);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--bgcolor) !important;
+}
+
+.cart-remove {
+    cursor: pointer;
+
+}
+
+.cart-remove:hover {
+    opacity: 80%;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--spcolor);
+    color: var(--textcolor) !important;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--greycolor) !important;
+}
+
+#close-cart {
+    /*close button*/
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    color: var(--maincolor);
+    cursor: pointer;
+    width: 8%;
+    height: 5%;
+}
+
+#cart-icon {
+    width: 2%;
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    min-height: 26px;
+    min-width: 26px;
+}
+
+
+
+.cart.active {
+    /*control cart to open and close*/
+    right: 0;
+}
+
+/*------------------------------------Cart Function End ------------------------------------------ */
+
+/*------------------------------------Cart Box Design------------------------------------------ */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: white !important;
+    box-shadow: -2px 0 10px hsl(0 4% 15%/ 10%);
+    z-index: 100;
+    transition: 0.3s;
+    overflow: scroll;
+    
+
+}
+
+.cart *{
+    color: var(--bgcolor);
+}
+
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+
+
+/*------------------------------------Cart Box Design End------------------------------------------ */

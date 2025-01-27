@@ -1,0 +1,199 @@
+:root {
+    --bgcolor: #211f20;
+    --maincolor: white;
+    --textcolor: white;
+    --greycolor: grey;
+    --spcolor: #c33a27;
+    --buttonHover: #c33a27;
+    --buttonNormal: #dfe0e3;
+    --buttonNoBG: var(--bgcolor);
+}
+
+@font-face {
+    font-family: Worksans;
+    src: url("/Work_Sans/WorkSans-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+main {
+    min-height: 550px;
+}
+
+* {
+    font-family: Worksans !important;
+    color: var(--textcolor);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 350;
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.5em;
+}
+
+h5{
+    font-size: 1em;
+}
+
+h6{
+    font-size: 0.5em;
+}
+
+/*------------------------------------header------------------------------------------ */
+
+header {
+    height: 65px;
+    position: relative;
+
+}
+
+#title {
+    display: flex;
+    flex-wrap: wrap;
+    top: 3px;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+h1 {
+    font-weight: 350;
+    font-size: 3em;
+
+}
+
+h1 a {
+    text-decoration: none;
+
+}
+
+.headertxt a, .headertxt{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.headertxt:hover, .headertxt a:hover{
+    text-decoration: underline var(--spcolor) 2px;
+    font-weight: 500;
+}
+
+#headerTable td{
+    width: 6%;
+}
+
+
+
+/*------------------------------------header end------------------------------------------ */
+
+
+/*------------------------------------footer bar------------------------------------------ */
+.allfooter {
+    text-align: left;   
+    padding-right: 0.5%;
+    padding-left: 1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: var(--bgcolor);
+    border-top: var(--spcolor) 10px solid;
+    width: 100%;
+    font-weight: 250;
+    font-size: 16px;
+    color: var(--textcolor);
+}
+
+.top {
+    display: inline-block;
+    width: 4%;
+    z-index: 4;
+    opacity: 60%;
+    margin-left: 47%;
+}
+
+.top:hover {
+    cursor: pointer;
+}
+
+.footer-content {
+    float: left;
+    width: 23%;
+    margin: 1%;
+}
+
+.footer-content h2 {
+    font-weight: 350;
+    font-size: 16px;
+    display: block;
+    border-bottom: white solid 1px;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.footer-content h3 {
+    font-weight: 450;
+    font-size: 16px;
+    color: var(--spcolor);
+}
+
+.footer-content a {
+    text-decoration: none;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.footer-content li {
+    padding-top: 7px;
+    
+}
+
+.address{
+    text-align: justify;
+    padding-bottom: 5%;
+}
+
+.footer-content ul {
+    list-style-type: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline var(--buttonHover) 2px;
+    font-weight: 300;
+}
+
+
+.contact-icons {
+    display: flex; /* Arrange icons in a horizontal line */
+}
+
+.contact-icon {
+    width: 40px; /* Set the same width for all icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between icons */
+    cursor: pointer;
+}
+
+.copyright {
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+/*------------------------------------footer end------------------------------------------ */
+
+
+

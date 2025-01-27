@@ -1,0 +1,31 @@
+﻿
+.thxMsgMain *
+{
+    color: var(--bgcolor);
+}
+
+
+
+.thxMsg h3 {
+    padding-left: 5%;
+    padding-top: 2%;
+    font-weight: 400;
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    margin-top: 10%;
+    text-align:center;
+}
+
+.btnBack {
+    clear: both;
+    display: block;
+    margin: 1.5rem auto 2rem auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--spcolor);
+    color: var(--textcolor) !important;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 125px;
+}

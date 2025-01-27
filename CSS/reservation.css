@@ -1,0 +1,219 @@
+.bookingBanner {
+    position: relative; /* Ensure the positioning context for pseudo-element */
+    display: block;
+    padding: 5%;
+}
+
+.bookingBanner::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(ReservePic/bookingBanner.jpg);
+    opacity: 0.1; /* Adjust the opacity of the background image */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.bookingContent{
+    background-color: white;
+    color: black !important;
+    padding: 7%;
+}
+
+.bookingContent *{
+    color: black !important;
+}
+
+.bookingDetails {
+    width: 100%;
+    text-align: left;
+    border-spacing: 35px;
+}
+
+.bookingDetails td {
+    width: 33.33%; 
+}
+
+.bookingDetails label {
+    display: block; 
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    
+}
+
+.bookingDetails input,
+.bookingDetails select {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.dateip{
+    background-image: url(ReservePic/date.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 9px) center; 
+}
+
+.dateip:hover{
+   cursor: pointer;
+}
+
+.timeip{
+    background-image: url(ReservePic/time.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 9px) center; 
+}
+
+.bookingFormButtons {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center items horizontally */
+    
+}
+
+.bookingFormButtons button{
+    border: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+.bookingFormButtons button:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.submitButton{
+    color: white !important;
+    background-color: var(--spcolor);
+}
+
+
+ /* Styles for popup confirmation */
+ .popupConfirm {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.popupConfirm-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 30%;
+    font-weight: bolder;
+}
+.popupConfirm-content button {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding: 2%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.show {
+    display: block !important; /* Add !important to override inline style */
+}
+
+
+/*date picker*/
+.time-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeslot {
+    margin-bottom: 10px;
+  }
+  select {
+    padding: 5px;
+  }
+
+
+
+  /*reservation check*/
+
+  .historyPanel{
+    padding: 1%;
+    padding-top: 13%;
+  }
+
+  .historyPanel h3{
+    padding: 2%;
+    background-color: var(--spcolor);
+    color: white !important;
+    font-weight: 250;
+  }
+
+  #reservationTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #reservationTable th,
+  #reservationTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #reservationTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  #reservationTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #reservationTable td:last-child {
+    text-align: center;
+  }
+  
+  #reservationTable th:last-child,
+  #reservationTable td:last-child {
+    width: 100px;
+  }
+  
+  #reservationTable th:nth-child(2),
+  #reservationTable td:nth-child(2) {
+    width: 150px;
+  }
+  
+  #reservationTable th:nth-child(3),
+  #reservationTable td:nth-child(3) {
+    width: 50px;
+  }
+  
+  #reservationTable th:nth-child(4),
+  #reservationTable td:nth-child(4) {
+    width: 150px;
+  }
+  
+  #reservationTable th:nth-child(5),
+  #reservationTable td:nth-child(5) {
+    width: 200px;
+  }
+  
+  #reservationTable th:nth-child(6),
+  #reservationTable td:nth-child(6) {
+    width: 100px;
+  }
+  
+  #reservationTable th:nth-child(7),
+  #reservationTable td:nth-child(7) {
+    width: 100px;
+  }

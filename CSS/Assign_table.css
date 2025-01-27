@@ -1,0 +1,70 @@
+
+/* Paragraph styles */
+p {
+    margin-bottom: 10px;
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+}
+
+/* Select styles */
+select {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* Reservation details styles */
+#reservationDetails {
+    margin-top: 20px;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+/* Form label styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form input styles */
+form input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+}
+
+/* Form input readonly styles */
+form input[readonly] {
+    background-color: #f4f4f4; /* Light gray background for readonly inputs */
+    cursor: not-allowed; /* Change cursor to not-allowed for readonly inputs */
+}
+
+/* Reservation details header styles */
+#reservationDetails h7 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

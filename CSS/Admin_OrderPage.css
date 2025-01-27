@@ -1,0 +1,96 @@
+.ViewOrderPanel {
+    margin-top: 2%;
+    padding: 2%;
+    width: 100%;
+    box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: -4px -5px 9px 0px rgba(0, 0, 0, 0.22);
+    max-height: 550px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+    .ViewOrderPanel::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+
+
+.OrderList {
+    margin: 2%;
+    border: black 1px solid;
+    border-collapse: collapse;
+    width: 95%;
+    overflow: scroll;
+    font-size:14px !important;
+}
+
+    .OrderList th {
+        border-bottom: 3px solid grey !important;
+        color: white !important;
+        background-color: #333333 !important;
+    }
+
+    .OrderList th,
+    .OrderList td {
+        padding: 1%;
+        border: black 1px solid;
+        color: black;
+        background-color: white ;
+    }
+.status-label {
+    text-align: center;
+}
+ 
+
+
+.confirmedBtn {
+    background-color: green;
+}
+
+/*confirm status pop up window*/
+.popupConfirm {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.popupConfirm-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 30%;
+    font-weight: bolder;
+}
+
+    .popupConfirm-content button {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        padding: 2%;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+.show {
+    display: block;
+}
+
+.Confirm {
+    background-color: green;
+    color: white;
+}
+
+.Cancel {
+    background-color: red;
+    color: white;
+}

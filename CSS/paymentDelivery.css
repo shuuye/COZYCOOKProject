@@ -1,0 +1,348 @@
+.CheckOut {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.OrderSummary {
+    text-align: center;
+}
+
+.paymentDetail h3{
+    text-align: center;
+}
+
+#PaymentMethod {
+    width: 20%;
+    display: block;
+    height: 40px;
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: black;
+}
+
+.paymentDetail h3{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid;
+}
+
+#CardNumberBox {
+    display: none;
+    width: 40%;
+}
+
+/* Styles for the promo code */
+#PromoCode {
+    width: calc(20% - 80px); /* Adjust width based on button width */
+    color: black;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#PromoCodeResult {
+    margin-top: 20px;
+    color: green; /* Example color for successful promo code */
+}
+
+
+
+button {
+    background-color: var(--spcolor);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Styles for the card number input box */
+#CardNumber {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* Styles for the delivery fee */
+.deliveryFee {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin-right: 8%;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* Styles for the payment details container */
+#PaymentDetailsContainer {
+    margin-top: 20px;
+}
+
+/* Media query for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
+
+body{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.delivery-form {
+    padding: center;
+}
+
+input[type="text"],
+select {
+    color: black;
+}
+
+.paymentDetail {
+    color: black;
+}
+
+.total-title {
+    position: relative;
+    width: 15%;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    
+    /*text-align: right;*/
+    /*padding-right: 3%;*/
+}
+
+/*=====================================cartReview.css======================================*/
+
+#cartReview {
+    margin: 1%;
+    background-color: var(--maincolor);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#cartReview * {
+    color: var(--bgcolor);
+}
+
+#cartReview h2{
+    text-align: center;
+}
+
+.cart-product-title {
+    font-size: 15px;
+}
+
+
+main::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.size {
+    display: block;
+    margin: 8px;
+    min-width: 100px;
+    background-color: white;
+    padding: 5px;
+
+}
+
+.size:focus {
+    background-color: rgba(225, 225, 225, 0.278);
+}
+
+.payment-section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.payment-box-title {
+    padding: 5%;
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.payment-box {
+    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 0px;
+    margin-top: 1rem;
+    display: block;
+
+}
+
+.payment-box::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.payment-cart-box {
+    display: block;
+    clear: both;
+    border-bottom: var(--spcolor) solid 1px;
+
+}
+
+
+.cart-price {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1%;
+    clear: both;
+}
+
+.cart-img {
+    width: 20%;
+    object-fit: contain;
+    position: static;
+    padding: 10px;
+    float: left;
+}
+
+.detail-box {
+    padding: 2%;
+    position: static;
+    float: left;
+    width: 70%;
+}
+
+.cart-product-title {
+    font-weight: 600;
+    font-size: large;
+    padding: 1%;
+}
+
+.displayqty {
+    float: left;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+.cart-quantity {
+    border: 1px solid;
+    outline-color: var(--maincolor);
+    height: 1rem;
+    width: 2.8rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+.cart-remove {
+    cursor: pointer;
+    position: static;
+    float: left;
+    width: 3.5%;
+    padding-top: 5%;
+}
+
+.cart-remove:hover {
+    opacity: 80%;
+}
+
+.total {
+    margin: 5%;
+    margin-top: 0;
+    padding: 2%;
+    display: block;
+    position: static;
+    border-top: 1px solid;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.total-title {
+    position: relative;
+    width: 15%;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+
+    /*text-align: right;*/
+    /*padding-right: 3%;*/
+}
+
+.total-price {
+    float: left;
+    position: relative;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    /*text-align: center;*/
+}
+
+.button{
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.btn-checkout {
+    clear: both;
+    display: block;
+    margin: 1.5rem auto 2rem auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--spcolor);
+    color: var(--textcolor) !important;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 125px;
+}
+
+.btn-checkout:hover {
+    background: var(--greycolor);
+}
+
+.btn-back {
+    clear: both;
+    display: flex;
+    margin: 1.5rem auto 2rem auto;
+    padding: 12px 20px;
+    border: none;
+    background: rgba(128, 128, 128, 0.338);
+    color: var(--bgcolor);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 125px;
+}
+
+
+
+.btn-back:hover {
+    background: var(--greycolor);
+}

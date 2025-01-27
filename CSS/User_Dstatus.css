@@ -1,0 +1,92 @@
+.container {
+    width: 100%;
+}
+
+.statusmain {
+    background-color: white;
+    color: black !important;
+    padding-left: 3%;
+    margin: 2%;
+    border-radius: 1%;
+}
+
+    .statusmain * {
+        color: black !important;
+    }
+
+.delivery-head h3 {
+    border-radius: 20px;
+    background-color: grey;
+    left: auto;
+    display: inline-block;
+    padding: 9px 10px;
+    margin-top: 0;
+}
+
+.progressbar {
+    list-style-type: none;
+    padding: 0;
+}
+
+.progressbar li {
+    width: 33.33%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+    .progressbar li:before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid var(--spcolor);
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: var(--spcolor);
+    }
+
+    .progressbar li:last-child:before {
+        border: none;
+    }
+
+    .progressbar li p {
+        margin: 0;
+    }
+
+    .progressbar li:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 14px;
+        left: -50%;
+        background-color: var(--spcolor);
+        z-index: 1;
+    }
+
+.contentP {
+    text-align: left; /* Align paragraph content to the left */
+}
+
+    .contentP p {
+        font-size: 16px; /* Adjust font size as needed */
+        margin: 10px 0; /* Add some margin top and bottom for spacing */
+    }
+
+    .contentP .btn-container {
+        text-align: center; /* Align the button container to the center */
+    }
+
+    .contentP .btn {
+        background-color: var(--spcolor); /* Set button background color to red */
+        color: white !important; /* Set button text color to white */
+        padding: 10px 20px; /* Add padding to the buttons */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        cursor: pointer; /* Add pointer cursor on hover */
+        margin: 10px; /* Add margin around the buttons */
+        display: inline-block; /* Ensure buttons are displayed in a line */
+    }

@@ -1,0 +1,173 @@
+
+
+.checkoutContent{
+    background-color: var(--maincolor);
+    padding: 5%;
+    border-radius: 2%;
+}
+
+.checkoutContent *{
+    color: var(--bgcolor);
+}
+
+.CheckOut {
+    text-align: center;
+    padding-bottom: 5%;
+    
+}
+.OrderSummary , .paymentDetail h3{
+    text-align: center;
+    background: var(--spcolor);
+    margin-top: 1%;
+}
+
+.OrderSummary h3, .paymentDetail h3{
+    color: var(--maincolor);
+    padding: 2%;
+}
+/* Styles for the payment details */
+#PaymentMethod {
+    width: 20%;
+    display: block;
+    height: 40px;
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: black;
+}
+.paymentDetail h3{
+    padding-top: 3%;
+}
+#CardNumberBox {
+    display: none;
+    width: 40%;
+}
+
+/* Styles for the promo code */
+#PromoCode {
+    width: calc(20% - 80px); /* Adjust width based on button width */
+    display: block;
+    color: black;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.applybtn{
+    color: var(--maincolor);
+}
+
+#PromoCodeResult {
+    margin-top: 10px;
+    color: green; /* Example color for successful promo code */
+}
+
+/* Styles for the total amount and place order button */
+#Total, #DelTotal {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+
+button {
+    background-color: #c33a27;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button{
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.button *{
+    color: white;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.placebtn{
+    color: var(--maincolor);
+    
+}
+
+/* Styles for the card number input box */
+#CardNumber {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* Styles for the delivery fee */
+#DeliveryFee {
+    font-weight: bold;
+}
+
+
+.deliveryFee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.deliveryFee-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.deliveryFee-price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Styles for the payment details container */
+#PaymentDetailsContainer {
+    margin-top: 20px;
+}
+
+/* Media query for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
+
+.payment-content{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.delivery-form {
+    padding: center;
+}
+
+input[type="text"],
+select {
+    color: black;
+}
+
+.paymentDetail {
+    color: black;
+}

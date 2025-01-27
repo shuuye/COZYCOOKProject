@@ -1,0 +1,31 @@
+/*Order Management Navigation*/
+.OrderNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  .OrderNavSelect {
+    float: left;
+  }
+  
+  .OrderNavSelect a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .OrderNavSelect a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #c33a27;
+  }
