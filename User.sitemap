@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/index.aspx" title="Home"  description="Main Home page" >
+
+		<siteMapNode url="~/Pages/User/Menu.aspx" title="Menu"  description="Menu Page">
+			<siteMapNode url="~/Pages/User/selectDineOpt.aspx" title="Select Option"  >
+				<siteMapNode url="~/Pages/User/paymentDineIn.aspx" title="Dine Option"/>
+				<siteMapNode url="~/Pages/User/paymentDelivery.aspx" title="Delivery Option"/>
+			</siteMapNode>
+		</siteMapNode>
+
+		<siteMapNode url="~/Pages/User/reservation.aspx" title="Reservation"  description="Reservation Page">
+			<siteMapNode url="~/Pages/User/bookingSummary.aspx" title="Summary"/>
+		</siteMapNode>
+
+		<siteMapNode url="~/Pages/User/faq.aspx" title="FAQ"  description="FAQ Page" />
+
+		<siteMapNode url="~/Pages/User/login.aspx" title="Login"  description="Login Page">
+			<siteMapNode url="~/Pages/User/signup.aspx" title="Sign Up"/>
+		</siteMapNode>
+
+
+		<siteMapNode url="~/Pages/Admin/Admin_MainPage.aspx" title="Admin Dashboard"  description="Dashboard" roles="admin">
+			<siteMapNode url="~/Pages/Admin/Admin_ReservationPage.aspx" title="Reservation Management">
+				<siteMapNode url="~/Pages/Admin/Admin_Table.aspx" title="Table Management">
+					<siteMapNode url="~/Pages/Admin/Assign_Table.aspx" title="Table History"/>
+				</siteMapNode>
+			</siteMapNode>
+			<siteMapNode  title="Order Management" roles="admin">
+				<siteMapNode url="~/Pages/Admin/Admin_OrderPage.aspx" title="All Order"/>
+				<siteMapNode url="~/Pages/Admin/Admin_KitchenPage.aspx" title="Confirmed Order"/>
+				<siteMapNode url="~/Pages/Admin/Admin_Delivery.aspx" title="Delivery Order"/>
+			</siteMapNode>
+			<siteMapNode url="~/Pages/Admin/Admin_Menu.aspx" title="Menu Management"/>
+
+		</siteMapNode>
+
+	</siteMapNode>
+</siteMap>

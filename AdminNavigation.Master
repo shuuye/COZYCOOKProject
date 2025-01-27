@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminNavigation.master.cs" Inherits="testing.AdminNavigation" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cozycook, chinese cuisine, restaurant">
+    <link rel="icon" type="pictures/Favicon" href="Pictures/faviconlogo.jpg">
+    <link rel="stylesheet" type="text/css" href="/CSS/Admin_MainPage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title><%: Page.Title %>  | COZYCOOK Admin</title>
+
+    <asp:ContentPlaceHolder ID="stylesheets" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="MainPage ">
+    <!--Admin page sidebar, do not write code here-->
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <span>Admin Management</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="/Pic_iconfolder/user_image.png" alt="me" class="user-img">
+            <div>
+                <p class="bold"> <asp:LoginName ID="LoginName1" runat="server" />
+                </p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="/Pages/Admin/Admin_MainPage.aspx">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard </span>
+            </li>
+            <li>
+                <a href="/Pages/Admin/Admin_ReservationPage.aspx">
+                    <i class="bx bx-package"></i>
+                    <span class="nav-item">Reservation</span>
+                </a>
+                <span class="tooltip">Reservation</span>
+            </li>
+            <li>
+                <a href="/Pages/Admin/Admin_Menu.aspx">
+                    <i class="bx bxs-bowl-rice"></i>
+                    <span class="nav-item">Menu</span>
+                </a>
+                <span class="tooltip">Menu </span>
+            </li>
+            <li>
+                <a href="/Pages/Admin/Admin_OrderPage.aspx">
+                    <i class="bx bx-check"></i>
+                    <span class="nav-item">Order</span>
+                </a>
+                <span class="tooltip">Order</span>
+            </li>
+            <li>
+                <a href="/index.aspx">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+        </ul>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector('.sidebar')
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+</body>
+
+</html>
+
+
+
+
