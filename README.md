@@ -8,5 +8,5 @@ Front-end: HTML, CSS
 Note: This project may not open successfully in some environments due to missing or lost files. It may require additional configuration or file recovery to function properly.
 
 
-##Link for screenshots and detailed explanation of each module in this project:
+## Link for screenshots and detailed explanation of each module in this project:
 - https://github.com/shuuye/COZYCOOKProject/blob/main/Restaurant%20Management%20System%20Screenshots.pdf
